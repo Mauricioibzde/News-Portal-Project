@@ -3,6 +3,7 @@
     #secondary {
     overflow-x: auto;
     align-items: baseline;
+    grid-template-columns: repeat(5, 1fr);
   
 
 }
@@ -35,9 +36,7 @@
 
 
 #weekly .grid {
-  display: block;
 
- 
 
   & img {
     width: 100%;
