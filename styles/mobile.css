@@ -1,4 +1,4 @@
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
     #secondary {
     overflow-x: auto;
@@ -7,10 +7,23 @@
 
 }
 
+.card {
+    & img {
+        width: 100%;
+    }
+}
+     
+       
+    
+
+
+
 
 
 #featured {
   grid-auto-flow: row;
+
+ 
 }
 
 .grid-col-02 {
@@ -18,21 +31,84 @@
 
 }
 
-.flex-box {
-      grid-template-columns: 1fr;
 
+
+
+#weekly .grid {
+  display: block;
+
+ 
+
+  & img {
+    width: 100%;
+    height: 100%;
+    
+  }
 }
 
-#weekly {
-    &>div {
-        grid-template-columns: repeat(1, 1fr);
-    }
+#weekly .grid {
+   overflow-x: auto;
+}
 
-    img{
+
+
+
+article {
+   display: flex;
+   flex-direction: row-reverse;
+
+   & div {
+    width: 100%;
+   }
+  
+}
+
+
+main {
+    display: block;
+}
+
+#ai div article {
+    display: flex;
+    gap: 1rem;
+
+   
+}
+
+#ai div article div:nth-child(1) {
+    width: auto;
+}
+
+#ai div article div:nth-child(2) {
+    width: auto;
+
+    & img {
         width: 100%;
     }
 }
 
+.container {
+   
+    padding-inline: 1rem;
+   
+}
+
+.ads {
+    padding-block: 1.4rem;
+}
+
 
 
 }
+
+
+@media (max-width: 1024px) {
+#weekly {
+    &>div {
+        grid-template-columns: repeat(4, 292px);
+        overflow-x: auto;
+    }
+}
+
+}
+

@@ -3,6 +3,10 @@
     display: grid;
 }
 
+main {
+    display: grid;
+}
+
 .grid-col {
 grid-auto-flow: column;
 }
