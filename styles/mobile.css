@@ -3,10 +3,29 @@
     #secondary {
     overflow-x: auto;
     align-items: baseline;
-    grid-template-columns: repeat(5, 1fr);
+   grid-template-columns: repeat( 7, 1fr);
+   align-items: center;
+
+
   
 
 }
+
+ #secondary a:nth-child(1) {
+   width: 10rem;
+   
+   }
+
+    #secondary a:nth-child(6) {
+   width: 10rem;
+   
+   }
+
+     #secondary a:nth-child(7) {
+   width: 10rem;
+   text-align: center;
+   
+   }
 
 .card {
     & img {
@@ -28,7 +47,8 @@
 }
 
 .grid-col-02 {
-    display: block;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -83,6 +103,12 @@ main {
     & img {
         width: 100%;
     }
+}
+
+#ai {
+    grid-area: ai;
+    overflow-y: auto;
+    height: 600px;
 }
 
 .container {
